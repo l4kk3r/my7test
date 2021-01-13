@@ -1,0 +1,159 @@
+.tasks-field {
+    display: flex;
+    padding: 20px;
+    height: calc(100vh - 200px);
+}
+.leftside {
+    flex: 50%;
+    border: 1px solid lightgray;
+    margin-right: 10px;
+    padding: 20px;
+    overflow-y: scroll;
+}
+.add-custom-b {
+    border: 1px solid #6b553a;
+    color: #6b553a;
+    border-radius: 50%;
+    background-color: transparent;
+    font-weight: 600;
+}
+.rightside {
+    flex: 50%;
+    border: 1px solid lightgray;
+    padding: 20px;
+    overflow-y: scroll;
+    position: relative;
+}
+.statusbar {
+    text-align: center;
+}
+.statusbar h3 {
+    border: 2px solid #6b553a;
+    padding: 20px;
+    display: inline-block;
+    font-size: 15px;
+    margin-bottom: 0;
+}
+.statusbar p {
+    margin-top: 5px;
+}
+.choosen-task {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.conwrapper {
+    position: absolute;
+    bottom: 45px;
+}
+.confirm-button {
+    position: fixed;
+    right: 50px;
+}
+.leftside label {
+    font-size: 20px;
+}
+.admin {
+    padding: 20px;
+}
+.intasking {
+    display: flex;
+}
+.intasking button {
+    border: 1px solid #6b553a;
+    color: #6b553a;
+    border-radius: 10px;
+    background: transparent;
+    margin-left: 10px;
+}
+.leftside input {
+    font-size: 17px;
+    margin-top: 10px;
+}
+.leftside input:focus {
+    outline: none;
+}
+.rightside h3 {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0;
+}
+.remove-button {
+    border: 1px solid #6b553a;
+    color: #6b553a;
+    border-radius: 10px;
+    background: transparent;
+    margin-left: 10px;
+}
+
+.confirm-button {
+    padding: 7px 20px;
+    font-size: 17px;
+    color: #ffe9cd;
+    background-color: #876a48;
+    border: none;
+    border-radius: 17px;
+}
+.confirm-button:disabled {
+    opacity: 0.5;
+}
+.rightside-mobile {
+    display: none;
+}
+.adminput {
+    font-size: 15px;
+    padding: 5px 15px;
+}
+.admin {
+    text-align: center;
+}
+.tasking {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.intasking {
+    align-items: center;
+}
+.intasking button {
+    height: 20px;
+}
+.add-tasking {
+    margin-top: 10px;
+}
+.add-tasking button {
+    font-size: 15px;
+    background-color:  #876a48;
+    color: white;
+    border: 2px solid black;
+    padding: 5px 15px;
+}
+@media (max-width: 600px) {
+    .rightside {
+        display: none;
+    }
+    .rightside-mobile {
+        display: block;
+    }
+    .open-cart {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+    }
+    .mobctask {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 100000;
+        background-color: rgba(0, 0, 0, 0.4);
+        width: 100vw;
+        height: 100vh;
+    }
+    .cart-content {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        background-color: white;
+    }
+}
